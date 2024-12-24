@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "belousov-zhabotinskiy-reaction"
+version = "0.1.0"
+description = ""
+authors = ["Anton <anton_sima@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numba = "^0.60.0"
+pygame = "^2.6.1"
+
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+# максимальная длина строки
+line_length = 119
